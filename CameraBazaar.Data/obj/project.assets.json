@@ -3615,11 +3615,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\01. SoftUni\\11. C# Web Advance\\CameraBazaar\\CameraBazaar.Data\\CameraBazaar.Data.csproj",
+      "projectUniqueName": "E:\\01. SoftUni\\11. C# Web Advance\\CameraBazaar\\CameraBazaar\\CameraBazaar.Data\\CameraBazaar.Data.csproj",
       "projectName": "CameraBazaar.Data",
-      "projectPath": "E:\\01. SoftUni\\11. C# Web Advance\\CameraBazaar\\CameraBazaar.Data\\CameraBazaar.Data.csproj",
+      "projectPath": "E:\\01. SoftUni\\11. C# Web Advance\\CameraBazaar\\CameraBazaar\\CameraBazaar.Data\\CameraBazaar.Data.csproj",
       "packagesPath": "C:\\Users\\Dimito\\.nuget\\packages\\",
-      "outputPath": "E:\\01. SoftUni\\11. C# Web Advance\\CameraBazaar\\CameraBazaar.Data\\obj\\",
+      "outputPath": "E:\\01. SoftUni\\11. C# Web Advance\\CameraBazaar\\CameraBazaar\\CameraBazaar.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

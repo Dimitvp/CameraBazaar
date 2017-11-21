@@ -4,3 +4,12 @@ E:\01. SoftUni\11. C# Web Advance\CameraBazaar\CameraBazaar.Data\obj\Debug\netst
 E:\01. SoftUni\11. C# Web Advance\CameraBazaar\CameraBazaar.Data\obj\Debug\netstandard2.0\CameraBazaar.Data.csproj.CoreCompileInputs.cache
 E:\01. SoftUni\11. C# Web Advance\CameraBazaar\CameraBazaar.Data\obj\Debug\netstandard2.0\CameraBazaar.Data.AssemblyInfoInputs.cache
 E:\01. SoftUni\11. C# Web Advance\CameraBazaar\CameraBazaar.Data\obj\Debug\netstandard2.0\CameraBazaar.Data.AssemblyInfo.cs
+E:\01. SoftUni\11. C# Web Advance\CameraBazaar\CameraBazaar\CameraBazaar.Data\obj\Debug\netstandard2.0\CameraBazaar.Data.csprojResolveAssemblyReference.cache
+E:\01. SoftUni\11. C# Web Advance\CameraBazaar\CameraBazaar\CameraBazaar.Data\obj\Debug\netstandard2.0\CameraBazaar.Data.csproj.CoreCompileInputs.cache
+E:\01. SoftUni\11. C# Web Advance\CameraBazaar\CameraBazaar\CameraBazaar.Data\obj\Debug\netstandard2.0\CameraBazaar.Data.AssemblyInfoInputs.cache
+E:\01. SoftUni\11. C# Web Advance\CameraBazaar\CameraBazaar\CameraBazaar.Data\obj\Debug\netstandard2.0\CameraBazaar.Data.AssemblyInfo.cs
+E:\01. SoftUni\11. C# Web Advance\CameraBazaar\CameraBazaar\CameraBazaar.Data\bin\Debug\netstandard2.0\CameraBazaar.Data.deps.json
+E:\01. SoftUni\11. C# Web Advance\CameraBazaar\CameraBazaar\CameraBazaar.Data\bin\Debug\netstandard2.0\CameraBazaar.Data.dll
+E:\01. SoftUni\11. C# Web Advance\CameraBazaar\CameraBazaar\CameraBazaar.Data\bin\Debug\netstandard2.0\CameraBazaar.Data.pdb
+E:\01. SoftUni\11. C# Web Advance\CameraBazaar\CameraBazaar\CameraBazaar.Data\obj\Debug\netstandard2.0\CameraBazaar.Data.dll
+E:\01. SoftUni\11. C# Web Advance\CameraBazaar\CameraBazaar\CameraBazaar.Data\obj\Debug\netstandard2.0\CameraBazaar.Data.pdb

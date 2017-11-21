@@ -5028,6 +5028,20 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "CameraBazaar.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.1"
+        },
+        "compile": {
+          "bin/placeholder/CameraBazaar.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CameraBazaar.Data.dll": {}
+        }
       }
     }
   },
@@ -13112,10 +13126,16 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "CameraBazaar.Data/1.0.0": {
+      "type": "project",
+      "path": "../CameraBazaar.Data/CameraBazaar.Data.csproj",
+      "msbuildProject": "../CameraBazaar.Data/CameraBazaar.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "CameraBazaar.Data >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 2.0.1",
       "Microsoft.NETCore.App >= 2.0.0",
@@ -13132,11 +13152,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\01. SoftUni\\11. C# Web Advance\\CameraBazaar\\CameraBazaar.Web\\CameraBazaar.Web.csproj",
+      "projectUniqueName": "E:\\01. SoftUni\\11. C# Web Advance\\CameraBazaar\\CameraBazaar\\CameraBazaar.Web\\CameraBazaar.Web.csproj",
       "projectName": "CameraBazaar.Web",
-      "projectPath": "E:\\01. SoftUni\\11. C# Web Advance\\CameraBazaar\\CameraBazaar.Web\\CameraBazaar.Web.csproj",
+      "projectPath": "E:\\01. SoftUni\\11. C# Web Advance\\CameraBazaar\\CameraBazaar\\CameraBazaar.Web\\CameraBazaar.Web.csproj",
       "packagesPath": "C:\\Users\\Dimito\\.nuget\\packages\\",
-      "outputPath": "E:\\01. SoftUni\\11. C# Web Advance\\CameraBazaar\\CameraBazaar.Web\\obj\\",
+      "outputPath": "E:\\01. SoftUni\\11. C# Web Advance\\CameraBazaar\\CameraBazaar\\CameraBazaar.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13154,7 +13174,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\01. SoftUni\\11. C# Web Advance\\CameraBazaar\\CameraBazaar\\CameraBazaar.Data\\CameraBazaar.Data.csproj": {
+              "projectPath": "E:\\01. SoftUni\\11. C# Web Advance\\CameraBazaar\\CameraBazaar\\CameraBazaar.Data\\CameraBazaar.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
