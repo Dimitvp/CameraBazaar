@@ -126,7 +126,7 @@
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("CameraBazaar.Web.Models.ApplicationUser", b =>
+            modelBuilder.Entity("CameraBazaar.Web.Models.User", b =>
                 {
                     b.Property<string>("Id");
 
@@ -185,7 +185,7 @@
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("CameraBazaar.Web.Models.ApplicationUser")
+                    b.HasOne("CameraBazaar.Web.Models.User")
                         .WithMany("Claims")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -193,7 +193,7 @@
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("CameraBazaar.Web.Models.ApplicationUser")
+                    b.HasOne("CameraBazaar.Web.Models.User")
                         .WithMany("Logins")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -206,7 +206,7 @@
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("CameraBazaar.Web.Models.ApplicationUser")
+                    b.HasOne("CameraBazaar.Web.Models.User")
                         .WithMany("Roles")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
