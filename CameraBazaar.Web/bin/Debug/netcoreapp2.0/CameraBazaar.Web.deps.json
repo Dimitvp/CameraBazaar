@@ -24,6 +24,7 @@
       "CameraBazaar.Web/1.0.0": {
         "dependencies": {
           "CameraBazaar.Data": "1.0.0",
+          "CameraBazaar.Services": "1.0.0",
           "Microsoft.AspNetCore.All": "2.0.3",
           "Microsoft.EntityFrameworkCore.Tools": "2.0.1",
           "Microsoft.NETCore.App": "2.0.0",
@@ -4067,6 +4068,17 @@
           "CameraBazaar.Data.dll": {}
         }
       },
+      "CameraBazaar.Services/1.0.0": {
+        "dependencies": {
+          "CameraBazaar.Data": "1.0.0"
+        },
+        "runtime": {
+          "CameraBazaar.Services.dll": {}
+        },
+        "compile": {
+          "CameraBazaar.Services.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.0.0": {
         "dependencies": {
           "Microsoft.NETCore.DotNetHostPolicy": "2.0.0",
@@ -6380,6 +6392,11 @@
       "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
     },
     "CameraBazaar.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CameraBazaar.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

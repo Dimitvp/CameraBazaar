@@ -49,7 +49,7 @@
 
             <div class="form-group">
                 <label asp-for="MinISO"></label>
-                <select asp-for="MinISO" asp-items="Html.GetEnumSelectList<CameraMake>()" class="form-control"></select>
+                <select asp-for="MinISO" asp-items="Html.GetEnumSelectList<MinISO>()" class="form-control"></select>
                 <span asp-validation-for="MinISO" class="text-danger"></span>
             </div>
 
@@ -73,13 +73,13 @@
             </div>
             
             <div class="form-group">
-                <label asp-for="LightMetering"></label>
+                <label asp-for="LightMeterings"></label>
                 @foreach (var enumValue in Enum.GetValues(typeof(LightMetering)).Cast<LightMetering>())
                 {
-                    <input type="checkbox" name=@nameof(LightMetering) value="@((int)enumValue)" /> @: @enumValue.ToDisplayName()
+                    <input type="checkbox" name="@nameof(LightMetering)s" value="@((int)enumValue)" /> @: @enumValue.ToDisplayName()
                 }
                 
-                <span asp-validation-for="LightMetering" class="text-danger"></span>
+                <span asp-validation-for="LightMeterings" class="text-danger"></span>
             </div>
             
             <div class="form-group">

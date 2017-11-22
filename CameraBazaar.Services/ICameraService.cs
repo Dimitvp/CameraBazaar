@@ -1,5 +1,6 @@
 ﻿namespace CameraBazaar.Services
 {
+    using System.Collections.Generic;
     using CameraBazaar.Data.Models;
 
     public interface ICameraService
@@ -12,10 +13,10 @@
             int minShutterSpeed,
             int maxShutterSpeed,
             MinISO minISO,
-            int maxIso,
+            int maxISO,
             bool isFullFrame,
             string videoResolution,
-            LightMetering lightMetering,
+            IEnumerable<LightMetering> lightMeterings,
             string description,
             string imageUrl,
             string userId);

@@ -1,5 +1,7 @@
 ﻿namespace CameraBazaar.Services.Implementations
 {
+    using System.Collections.Generic;
+    using System.Linq;
     using CameraBazaar.Data;
     using CameraBazaar.Data.Models;
 
@@ -11,11 +13,42 @@
         {
             this.db = db;
         }
-        public void Create(CameraMake make, string model, decimal price, int quantity, int minShutterSpeed, int maxShutterSpeed,
-            MinISO minISO, int maxIso, bool isFullFrame, string videoResolution, LightMetering lightMetering, string description, string imageUrl,
+        public void Create(
+            CameraMake make, 
+            string model, 
+            decimal price, 
+            int quantity, 
+            int minShutterSpeed, 
+            int maxShutterSpeed,
+            MinISO minISO, 
+            int maxISO, 
+            bool isFullFrame, 
+            string videoResolution,
+            IEnumerable<LightMetering> lightMeterings,
+            string description, 
+            string imageUrl,
             string userId)
         {
-            throw new System.NotImplementedException();
+            var camera = new Camera
+            {
+                Make = make,
+                Model = model,
+                Price = price,
+                Quantity = quantity,
+                MinShutterSpeed = minShutterSpeed,
+                MaxShutterSpeed = maxShutterSpeed,
+                MinISO = minISO,
+                MaxISO = maxISO,
+                IsFullFrame = isFullFrame,
+                VideoResolution = videoResolution,
+                LightMetering = (LightMetering)lightMeterings.Cast<int>().Sum(),
+                Description = description,
+                ImageUrl = imageUrl,
+                UserId = userId
+            };
+
+            this.db.Add(camera);
+            this.db.SaveChanges();
         }
     }
 }

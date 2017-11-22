@@ -12,3 +12,5 @@ E:\01. SoftUni\11. C# Web Advance\CameraBazaar\CameraBazaar\CameraBazaar.Web\bin
 E:\01. SoftUni\11. C# Web Advance\CameraBazaar\CameraBazaar\CameraBazaar.Web\bin\Debug\netcoreapp2.0\CameraBazaar.Data.pdb
 E:\01. SoftUni\11. C# Web Advance\CameraBazaar\CameraBazaar\CameraBazaar.Web\obj\Debug\netcoreapp2.0\CameraBazaar.Web.dll
 E:\01. SoftUni\11. C# Web Advance\CameraBazaar\CameraBazaar\CameraBazaar.Web\obj\Debug\netcoreapp2.0\CameraBazaar.Web.pdb
+E:\01. SoftUni\11. C# Web Advance\CameraBazaar\CameraBazaar\CameraBazaar.Web\bin\Debug\netcoreapp2.0\CameraBazaar.Services.dll
+E:\01. SoftUni\11. C# Web Advance\CameraBazaar\CameraBazaar\CameraBazaar.Web\bin\Debug\netcoreapp2.0\CameraBazaar.Services.pdb
