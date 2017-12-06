@@ -50,5 +50,42 @@
             this.db.Add(camera);
             this.db.SaveChanges();
         }
+
+        public bool Edit(
+            int id,
+            CameraMake make,
+            string model,
+            decimal price,
+            int quantity,
+            int minShutterSpeed,
+            int maxShutterSpeed,
+            MinISO minISO,
+            int maxISO,
+            bool isFullFrame,
+            string videoResolution,
+            IEnumerable<LightMetering> lightMeterings,
+            string description,
+            string imageUrl,
+            string userId)
+        {
+            var camera = this.db
+                .Cameras
+                .FirstOrDefault(c => c.Id == id && c.UserId == userId);
+
+            if (camera == null)
+            {
+                return false;
+            }
+
+            camera.Make = make;
+            //Update everything else
+
+            this.db.SaveChanges();
+
+            return true;
+        }
+
+        public bool Exists(int id, string userId)
+            => this.db.Cameras.Any(c => c.Id == id && c.UserId == userId);
     }
 }

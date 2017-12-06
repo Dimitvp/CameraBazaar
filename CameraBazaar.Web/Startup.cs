@@ -1,5 +1,6 @@
 ﻿namespace CameraBazaar.Web
 {
+    using CameraBazaar.Web.Infrastructure.Filters;
     using Infrastructure.Extensions;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Identity;
@@ -34,8 +35,13 @@
                 })
                 .AddEntityFrameworkStores<CameraBazaarDbContext>()
                 .AddDefaultTokenProviders();
+
             services.AddDomainService();
-            services.AddMvc();
+
+            services.AddMvc(options =>
+            {
+                options.Filters.Add<LogAttribute>();
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

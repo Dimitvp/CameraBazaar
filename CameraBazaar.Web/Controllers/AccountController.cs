@@ -3,6 +3,7 @@
     using System;
     using System.Security.Claims;
     using System.Threading.Tasks;
+    using Infrastructure.Filters;
     using Microsoft.AspNetCore.Authentication;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
@@ -42,6 +43,7 @@
             return View();
         }
 
+        [MeasureTime]
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]

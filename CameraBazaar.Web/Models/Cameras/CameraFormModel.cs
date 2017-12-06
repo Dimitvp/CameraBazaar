@@ -4,7 +4,7 @@
     using System.ComponentModel.DataAnnotations;
     using Data.Models;
 
-    public class AddCamerasViewModel
+    public class CameraFormModel
     {
         public CameraMake Make { get; set; }
 
@@ -41,7 +41,7 @@
         public string VideoResolution { get; set; }
 
         [Display(Name = "Light Metering")]
-        public IEnumerable<LightMetering> LightMeterings { get; set; }
+        public IEnumerable<LightMetering> LightMeterings { get; set; } = new List<LightMetering>();
 
         [Required]
         [StringLength(6000)]
